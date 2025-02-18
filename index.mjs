@@ -13,7 +13,7 @@ var ol = (e, t, n, a) => ({
     return z(e, t, a);
   }
 });
-const EN = "https://ai.stg.timelygpt.co.kr", Di = "https://ai.stg.timelygpt.co.kr/api-back", Sv = EN, wa = class wa {
+const EN = "https://ai.timelygpt.co.kr", Di = "https://ai.timelygpt.co.kr/api-back", Sv = EN, wa = class wa {
   constructor(t) {
     Lt(this, "token", "");
     Lt(this, "baseURL", Sv);
