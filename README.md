@@ -14,7 +14,7 @@ https://cdn.jsdelivr.net/gh/timely-hub/timely-chat@p.1.0.4/index.js
 
 ## cdn - staging
 
-https://cdn.jsdelivr.net/gh/timely-hub/timely-chat@stg.1.0.4/index.js
+https://cdn.jsdelivr.net/gh/timely-hub/timely-chat@stg.1.0.5/index.js
 
 ## cdn - esm - 
 https://cdn.jsdelivr.net/gh/timely-hub/timely-chat@p.1.0.4/index.esm.js
