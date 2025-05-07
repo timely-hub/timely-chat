@@ -13,7 +13,7 @@ var il = (e, t, n, a) => ({
     return z(e, t, a);
   }
 });
-const SN = "https://ai.stg.timelygpt.co.kr", Di = "https://ai.stg.timelygpt.co.kr/api-back", vv = SN, wa = class wa {
+const SN = "https://ai.stg.timelygpt.co.kr", Di = "http://localhost:5123/api-back", vv = SN, wa = class wa {
   constructor(t) {
     Dt(this, "token", "");
     Dt(this, "baseURL", vv);
@@ -9854,7 +9854,7 @@ const ND = {
     throw new Error("Failed to get space info");
   return a.data;
 }, DD = async (e, t) => {
-  const n = zl(), o = await (await fetch(`${Di}/user/groups/bulk`, {
+  const n = zl(), o = await (await fetch(`${Di}/groups/bulk`, {
     method: "POST",
     body: JSON.stringify({ spaceId: e, group: t }),
     headers: {
@@ -9903,7 +9903,7 @@ const ND = {
     async function u(c) {
       try {
         const p = await KR();
-        if (!p) return;
+        if (console.log("user", p), !p) return;
         const f = p.spaceId, m = await DD(f, c.chat), g = m[c.chat.length - 1], E = m.map((R) => R.name).join(" / "), y = {
           ref_id: g.id,
           name: E
@@ -41771,7 +41771,7 @@ function VG({ size: e = "Lg" }) {
 const WG = async (e) => {
   const t = zl();
   return t ? !!(await fetch(
-    `${Di}/token/check?target=user&token=1`,
+    `${Di}/token/check?target=user&credit=1`,
     {
       headers: {
         Authorization: `Bearer ${t}`,
@@ -41784,7 +41784,7 @@ const WG = async (e) => {
   const { spaceId: t, userId: n, token: a, name: o } = XR.getState().userValues;
   if (!t || !n || !a)
     throw new Error("Space ID or User ID or Token is not set");
-  const l = await fetch(`${Di}/user/transaction-reqs`, {
+  const l = await fetch(`${Di}/transaction-reqs`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -41792,15 +41792,14 @@ const WG = async (e) => {
     },
     body: JSON.stringify({
       spaceId: t,
-      requestUserId: n,
-      requesterName: o,
+      requesterId: n,
       type: "SPACE_TO_USER",
-      requestReason: "토큰 전량 소진됨",
-      requestedToken: e.toString()
+      requestReason: "크레딧 전량 소진됨",
+      requestedCredit: e.toString()
     })
   });
   if (!l.ok)
-    throw new Error("Failed to request tokens");
+    throw new Error("Failed to request credits");
   return l.json();
 }, KG = pe("h1")`
   ${({ $css: e }) => e ?? ""}
