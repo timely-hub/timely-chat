@@ -13,7 +13,7 @@ var il = (e, t, n, a) => ({
     return z(e, t, a);
   }
 });
-const SN = "https://ai.stg.timelygpt.co.kr", Di = "http://localhost:5123/api-back", vv = SN, wa = class wa {
+const SN = "https://ai.stg.timelygpt.co.kr", Di = "https://ai.stg.timelygpt.co.kr/api-back", vv = SN, wa = class wa {
   constructor(t) {
     Dt(this, "token", "");
     Dt(this, "baseURL", vv);
