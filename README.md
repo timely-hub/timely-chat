@@ -17,3 +17,7 @@ https://cdn.jsdelivr.net/gh/timely-hub/timely-chat@stg.1.0.9/index.js
 ## cdn - production
 
 https://cdn.jsdelivr.net/gh/timely-hub/timely-chat@p.1.0.9/index.js
+
+### typescript
+
+https://cdn.jsdelivr.net/gh/timely-hub/timely-chat@p.1.0.9/index.d.ts
