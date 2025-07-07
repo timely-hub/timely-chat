@@ -34,4 +34,4 @@ AI Chat 모듈을 위한 CDN 배포 저장소입니다.
 - TypeScript: https://cdn.jsdelivr.net/gh/timely-hub/timely-chat@stg.1.0.10/index.d.ts
 
 ---
-*Last updated: 2025-07-07 - prod v1.0.10*
+*Last updated: 2025-07-07 - stg v1.0.10*
