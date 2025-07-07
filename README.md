@@ -1,23 +1,37 @@
-# Timely Chat, master branch는 항상 최신 버전 명시
+# Timely Chat
 
-__사용 예시__
+AI Chat 모듈을 위한 CDN 배포 저장소입니다.
 
+## 최신 버전
+- Production: **N/A**
+- Staging: **1.0.10**
+
+## 사용법
+
+### Production
 ```html
-<script src="https://cdn.jsdelivr.net/gh/timely-hub/timely-chat@p.1.0.9/index.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/timely-hub/timely-chat@p.N/A/index.js"></script>
 ```
 
+### Staging
+```html
+<script src="https://cdn.jsdelivr.net/gh/timely-hub/timely-chat@stg.1.0.10/index.js"></script>
+```
 
-iife와, ts만 공유 하면 일단 됩니다.
+### TypeScript 지원
+```html
+<script src="https://cdn.jsdelivr.net/gh/timely-hub/timely-chat@p.N/A/index.d.ts"></script>
+```
 
-## cdn - staging
+## CDN 링크
 
-https://cdn.jsdelivr.net/gh/timely-hub/timely-chat@stg.1.0.9/index.js
+### Production
+- JavaScript: https://cdn.jsdelivr.net/gh/timely-hub/timely-chat@p.N/A/index.js
+- TypeScript: https://cdn.jsdelivr.net/gh/timely-hub/timely-chat@p.N/A/index.d.ts
 
+### Staging
+- JavaScript: https://cdn.jsdelivr.net/gh/timely-hub/timely-chat@stg.1.0.10/index.js
+- TypeScript: https://cdn.jsdelivr.net/gh/timely-hub/timely-chat@stg.1.0.10/index.d.ts
 
-## cdn - production
-
-https://cdn.jsdelivr.net/gh/timely-hub/timely-chat@p.1.0.9/index.js
-
-### typescript
-
-https://cdn.jsdelivr.net/gh/timely-hub/timely-chat@p.1.0.9/index.d.ts
+---
+*Last updated: 2025-07-07 - stg v1.0.10*
