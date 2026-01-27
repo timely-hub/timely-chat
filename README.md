@@ -4,7 +4,7 @@ AI Chat 모듈을 위한 CDN 배포 저장소입니다.
 
 ## 최신 버전
 - Production: **1.1.0**
-- Staging: **1.1.0**
+- Staging: **1.1.1**
 
 ## 사용법
 
@@ -15,7 +15,7 @@ AI Chat 모듈을 위한 CDN 배포 저장소입니다.
 
 ### Staging
 ```html
-<script src="https://cdn.jsdelivr.net/gh/timely-hub/timely-chat@stg.1.1.0/index.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/timely-hub/timely-chat@stg.1.1.1/index.js"></script>
 ```
 
 ### TypeScript 지원
@@ -30,8 +30,8 @@ AI Chat 모듈을 위한 CDN 배포 저장소입니다.
 - TypeScript: https://cdn.jsdelivr.net/gh/timely-hub/timely-chat@p.1.1.0/index.d.ts
 
 ### Staging
-- JavaScript: https://cdn.jsdelivr.net/gh/timely-hub/timely-chat@stg.1.1.0/index.js
-- TypeScript: https://cdn.jsdelivr.net/gh/timely-hub/timely-chat@stg.1.1.0/index.d.ts
+- JavaScript: https://cdn.jsdelivr.net/gh/timely-hub/timely-chat@stg.1.1.1/index.js
+- TypeScript: https://cdn.jsdelivr.net/gh/timely-hub/timely-chat@stg.1.1.1/index.d.ts
 
 ---
-*Last updated: 2025-12-19 - prod v1.1.0*
+*Last updated: 2026-01-27 - stg v1.1.1*
